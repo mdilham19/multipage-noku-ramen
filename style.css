@@ -1,0 +1,520 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, Helvetica, sans-serif;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.badan-utama {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+header {
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+    font-family: potta one;
+    font-size: 25px;
+}
+
+header h2 {
+    margin-bottom: 5px;
+    font-size: 45px;
+    font-family: potta one;
+}
+
+header p {
+    margin-top: 10px; 
+}
+.navigasi {
+    background: darkorange;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.navigasi li {
+    float: none;
+}
+
+.navigasi li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navigasi li a:hover {
+    background-color: red;
+    transition-duration: 2s;
+}
+
+.logo {
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+.menu li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    margin-bottom: 15px;
+}
+
+.banner img {
+    display: flex;
+    width: 101%;
+    height: 101%;
+    padding-left: 0;
+}
+
+.featured-food {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.featured-food h2 {
+    margin-top: 5px;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid crimson;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 30px; 
+}
+
+.food-item {
+    width: 20%; 
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+.food-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.food-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.food-item p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #c0392b;
+    margin-bottom: 15px;
+}
+
+.order-btn {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.order-btn:hover {
+    background-color: #a93226;
+}
+
+.see-more-menu {
+    display: inline-block;
+    margin-top: 20px;
+    color: #c0392b;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid #c0392b;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.see-more-menu:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+.info-sections h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid crimson;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.info-sections {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px; 
+}
+
+
+.info-box {
+    width: 30%;
+    border: 1px solid gainsboro;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.info-box p, .info-box h4 {
+    margin: 10px 0;
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid gainsboro;
+    transition: color 0.3s ease;
+}
+
+.info-box ul li a:hover {
+    color: darkorange;
+}
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table td {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 1em;
+}
+
+.schedule-table tr:first-child td {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.schedule-table tr:last-child td {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tombol {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 120px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+.tombol-pesan {
+    background-color: green;
+    transition: background-color 0.3s ease;
+}
+
+.tombol-pesan:hover {
+    background-color: darkgreen;
+}
+
+.location-section h2{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid crimson;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer {
+    clear: both;
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer span {
+    margin: 0 10px; 
+}
+
+footer i {
+    margin-right: 5px; 
+}
+
+.about-us {
+    max-width: 1350px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-intro, .about-mission, .about-story {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-intro img, .about-mission img, .about-story img {
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    width: 50%;
+}
+
+.about-intro .text-content h2, .about-mission .text-content h3, .about-story .text-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-intro, .about-mission, .about-story {
+        flex-direction: column;
+    }
+    .text-content, img {
+        width: 100%;
+    }
+}
+
+.our-service {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.our-service h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid crimson;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.our-service p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-item {
+    width: 20%;
+    text-align: center;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item i {
+    font-size: 40px; 
+    color: crimson; /* Contoh pengaturan warna */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+.service-item h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.contact-section {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact-section h2 {
+    margin-top: 5px;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid crimson;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around; /* Rapi di tengah */
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.map-container iframe {
+    width: 100%; /* Sesuaikan dengan kontainer */
+    height: 365px;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.map-container {
+    flex: 1;
+    max-height: 375px;
+    max-width: 700px; 
+}
+
+.form-container {
+    flex: 1;
+    min-width: 300px; /* Pastikan tidak terlalu kecil */
+    max-width: 700px;
+}
+
+.form-container input, 
+.form-container textarea {
+    width: 100%; /* Perbaikan dari 150% */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    box-sizing: border-box; /* Hindari overflow */
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: darkorange;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Susun vertikal pada layar kecil */
+        align-items: center;
+    }
+
+    .map-container, .form-container {
+        max-width: 100%; /* Sesuaikan lebar */
+    }
+}
+
